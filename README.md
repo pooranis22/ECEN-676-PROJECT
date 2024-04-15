@@ -14,40 +14,40 @@ There is a need to modify the bimodal.bpred, which is change line 24 into this:
 void O3_CPU::last_branch_result(uint64_t ip, uint8_t taken, uint64_t target, uint8_t branch_type)
 
 Your bimodal.bpred would look like this:
-{
-#include "ooo_cpu.h"
 
-#define BIMODAL_TABLE_SIZE 16384
-#define BIMODAL_PRIME 16381
-#define MAX_COUNTER 3
-int bimodal_table[NUM_CPUS][BIMODAL_TABLE_SIZE];
+    #include "ooo_cpu.h"
 
-void O3_CPU::initialize_branch_predictor()
-{
-    cout << "CPU " << cpu << " Bimodal branch predictor" << endl;
+    #define BIMODAL_TABLE_SIZE 16384
+    #define BIMODAL_PRIME 16381
+    #define MAX_COUNTER 3
+    int bimodal_table[NUM_CPUS][BIMODAL_TABLE_SIZE];
 
-    for(int i = 0; i < BIMODAL_TABLE_SIZE; i++)
-        bimodal_table[cpu][i] = 0;
-}
+    void O3_CPU::initialize_branch_predictor()
+    {
+        cout << "CPU " << cpu << " Bimodal branch predictor" << endl;
 
-uint8_t O3_CPU::predict_branch(uint64_t ip)
-{
-    uint32_t hash = ip % BIMODAL_PRIME;
-    uint8_t prediction = (bimodal_table[cpu][hash] >= ((MAX_COUNTER + 1)/2)) ? 1 : 0;
+        for(int i = 0; i < BIMODAL_TABLE_SIZE; i++)
+            bimodal_table[cpu][i] = 0;
+    }
 
-    return prediction;
-}
+    uint8_t O3_CPU::predict_branch(uint64_t ip)
+    {
+        uint32_t hash = ip % BIMODAL_PRIME;
+        uint8_t prediction = (bimodal_table[cpu][hash] >= ((MAX_COUNTER + 1)/2)) ? 1 : 0;
 
-void O3_CPU::last_branch_result(uint64_t ip, uint8_t taken, uint64_t target, uint8_t branch_type)
-{
-    uint32_t hash = ip % BIMODAL_PRIME;
+        return prediction;
+    }
 
-    if (taken && (bimodal_table[cpu][hash] < MAX_COUNTER))
-        bimodal_table[cpu][hash]++;
-    else if ((taken == 0) && (bimodal_table[cpu][hash] > 0))
-        bimodal_table[cpu][hash]--;
-}
-}
+    void O3_CPU::last_branch_result(uint64_t ip, uint8_t taken, uint64_t target, uint8_t branch_type)
+    {
+        uint32_t hash = ip % BIMODAL_PRIME;
+
+        if (taken && (bimodal_table[cpu][hash] < MAX_COUNTER))
+            bimodal_table[cpu][hash]++;
+        else if ((taken == 0) && (bimodal_table[cpu][hash] > 0))
+            bimodal_table[cpu][hash]--;
+    }
+
 
 Go to the folder "prefetcher" and upload the Entangling_2Ke.l1i_pref, Entangling_4Ke.l1i_pref, or Entangling_8Ke.l1i_pref to the folder.
 
