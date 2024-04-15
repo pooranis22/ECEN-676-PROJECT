@@ -10,8 +10,7 @@ run this command: tar -xzvf ipc1_public.tar.gz
 
 Go to run_champsim.sh and change line 9 to: TRACE_DIR=$PWD/ipc1_public
 
-Go to the folder "branch" and modify the bimodal.bpred:
-
+No need to modify the bimodal.bpred.
 
 Go to the folder "prefetcher" and upload the Entangling_2Ke.l1i_pref, Entangling_4Ke.l1i_pref, or Entangling_8Ke.l1i_pref to the folder.
 

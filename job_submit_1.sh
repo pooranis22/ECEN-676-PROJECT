@@ -9,4 +9,4 @@
 #SBATCH --partition=non-gpu          # This job does not use a GPU
 
 echo "Running client_001.champsimtrace.xz"
-sh ./run_champsim.sh bimodal-Entangling_2Ke-no-no-no-lru-1core 50000000 50000000 client_001.champsimtrace.xz
+sh ./run_champsim.sh bimodal-Entangling_2Ke-no-no-no-lru-1core 50 50 client_001.champsimtrace.xz
