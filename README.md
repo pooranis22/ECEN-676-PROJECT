@@ -77,4 +77,4 @@ or
 
     ./build_champsim.sh bimodal no no no no lru 1
 
-After build successful, sbatch the job_submits
+After build successful, sbatch the job_submits, the job scripts are under the job folder
