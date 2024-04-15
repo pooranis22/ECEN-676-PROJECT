@@ -83,6 +83,10 @@ After build successful, sbatch the job_submits, the job scripts are under the jo
 
 Don't forget to change my email to your email in the scripts!
 
+Upload results:
+
+![Upload Results](Upload_results.PNG)
+
 Simulations:
 
 Jay - Entangling_8Ke
