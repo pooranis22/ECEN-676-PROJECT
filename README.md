@@ -1,7 +1,9 @@
 # ECEN676-Project-Group9
 Fall 2024 ECEN676 Project Group9
 
-run this command: git clone --branch FDIP_master https://github.com/ChampSim/ChampSim.git
+run this command: 
+
+    git clone --branch FDIP_master https://github.com/ChampSim/ChampSim.git
 
 download the traces from here https://drive.google.com/file/d/1qs8t8-YWc7lLoYbjbH_d3lf1xdoYBznf/view
 
