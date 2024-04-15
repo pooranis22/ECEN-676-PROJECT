@@ -82,3 +82,13 @@ or
 After build successful, sbatch the job_submits, the job scripts are under the job folder
 
 Don't forget to change my email to your email in the scripts!
+
+Simulations:
+
+Jay - Entangling_8Ke
+
+Steven - Entangling_4Ke
+
+Zhihao - no and Entangling_2Ke
+
+Poorani - next_line
