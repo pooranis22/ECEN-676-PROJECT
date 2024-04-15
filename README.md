@@ -14,6 +14,7 @@ There is a need to modify the bimodal.bpred, which is change line 24 into this:
 void O3_CPU::last_branch_result(uint64_t ip, uint8_t taken, uint64_t target, uint8_t branch_type)
 
 Your bimodal.bpred would look like this:
+{
 #include "ooo_cpu.h"
 
 #define BIMODAL_TABLE_SIZE 16384
@@ -46,7 +47,7 @@ void O3_CPU::last_branch_result(uint64_t ip, uint8_t taken, uint64_t target, uin
     else if ((taken == 0) && (bimodal_table[cpu][hash] > 0))
         bimodal_table[cpu][hash]--;
 }
-
+}
 
 Go to the folder "prefetcher" and upload the Entangling_2Ke.l1i_pref, Entangling_4Ke.l1i_pref, or Entangling_8Ke.l1i_pref to the folder.
 
