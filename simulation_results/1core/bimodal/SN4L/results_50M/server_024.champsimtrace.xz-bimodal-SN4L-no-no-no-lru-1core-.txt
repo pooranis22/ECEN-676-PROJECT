@@ -1,0 +1,762 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 50000000
+Simulation Instructions: 50000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs /home/grads/p/pan82396610/ecen676/project_ZhihaoPan/SN4L/divide_conquer/ipc1_public/server_024.champsimtrace.xz
+CPU 0 Bimodal branch predictor
+Heartbeat CPU 0 instructions: 10000000 cycles: 3503386 heartbeat IPC: 2.85438 cumulative IPC: 2.85438 (Simulation time: 0 hr 0 min 33 sec) 
+Heartbeat CPU 0 instructions: 20000002 cycles: 6998323 heartbeat IPC: 2.86128 cumulative IPC: 2.85783 (Simulation time: 0 hr 1 min 5 sec) 
+Heartbeat CPU 0 instructions: 30000000 cycles: 10503405 heartbeat IPC: 2.853 cumulative IPC: 2.85622 (Simulation time: 0 hr 1 min 38 sec) 
+Heartbeat CPU 0 instructions: 40000000 cycles: 14005602 heartbeat IPC: 2.85535 cumulative IPC: 2.856 (Simulation time: 0 hr 2 min 11 sec) 
+Heartbeat CPU 0 instructions: 50000001 cycles: 17498251 heartbeat IPC: 2.86316 cumulative IPC: 2.85743 (Simulation time: 0 hr 2 min 44 sec) 
+
+Warmup complete CPU 0 instructions: 50000001 cycles: 17498251 (Simulation time: 0 hr 2 min 44 sec) 
+
+Heartbeat CPU 0 instructions: 60000000 cycles: 27132747 heartbeat IPC: 1.03794 cumulative IPC: 1.03794 (Simulation time: 0 hr 3 min 12 sec) 
+Heartbeat CPU 0 instructions: 70000000 cycles: 36825196 heartbeat IPC: 1.03173 cumulative IPC: 1.03482 (Simulation time: 0 hr 3 min 40 sec) 
+*** Reached end of trace for Core: 0 Repeating trace: /home/grads/p/pan82396610/ecen676/project_ZhihaoPan/SN4L/divide_conquer/ipc1_public/server_024.champsimtrace.xz
+Heartbeat CPU 0 instructions: 80000001 cycles: 46486311 heartbeat IPC: 1.03508 cumulative IPC: 1.03491 (Simulation time: 0 hr 4 min 8 sec) 
+Heartbeat CPU 0 instructions: 90000000 cycles: 56310338 heartbeat IPC: 1.01791 cumulative IPC: 1.03061 (Simulation time: 0 hr 4 min 37 sec) 
+Heartbeat CPU 0 instructions: 100000002 cycles: 66093578 heartbeat IPC: 1.02216 cumulative IPC: 1.02891 (Simulation time: 0 hr 5 min 6 sec) 
+Finished CPU 0 instructions: 50000001 cycles: 48595327 cumulative IPC: 1.02891 (Simulation time: 0 hr 5 min 6 sec) 
+
+
+SHEET
+IPC: 1.02891
+
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 1.02891 instructions: 50000001 cycles: 48595327
+L1D TOTAL     ACCESS:   14187668  HIT:   13197726  MISS:     989942
+L1D LOAD      ACCESS:    7998535  HIT:    7288443  MISS:     710092
+L1D RFO       ACCESS:    6189133  HIT:    5909283  MISS:     279850
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1D AVERAGE MISS LATENCY: 30.6345 cycles
+L1I TOTAL     ACCESS:   16288305  HIT:   12754387  MISS:    3533918
+L1I LOAD      ACCESS:    9175056  HIT:    8018970  MISS:    1156086
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:    7113249  HIT:    4735417  MISS:    2377832
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:    8564272  ISSUED:    8546336  USEFUL:    1443210  USELESS:     934618
+L1I AVERAGE MISS LATENCY: 16.6639 cycles
+L2C TOTAL     ACCESS:    4990503  HIT:    4358065  MISS:     632438
+L2C LOAD      ACCESS:    1700678  HIT:    1428913  MISS:     271765
+L2C RFO       ACCESS:     279744  HIT:     195230  MISS:      84514
+L2C PREFETCH  ACCESS:    2543144  HIT:    2275712  MISS:     267432
+L2C WRITEBACK ACCESS:     466937  HIT:     458210  MISS:       8727
+L2C PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:      27817  USELESS:     239000
+L2C AVERAGE MISS LATENCY: 42.7874 cycles
+LLC TOTAL     ACCESS:     751778  HIT:     714440  MISS:      37338
+LLC LOAD      ACCESS:     271761  HIT:     258541  MISS:      13220
+LLC RFO       ACCESS:      84506  HIT:      61639  MISS:      22867
+LLC PREFETCH  ACCESS:     267432  HIT:     266294  MISS:       1138
+LLC WRITEBACK ACCESS:     128079  HIT:     127966  MISS:        113
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:        135  USELESS:       1117
+LLC AVERAGE MISS LATENCY: 222.509 cycles
+Major fault: 0 Minor fault: 2384
+
+
+
+CPU 0 #distinct_blocks: 5612
+
+
+
+DisTable SINGLE
+total_freq: 1258596
+total_correct_predictions: 890268
+total_wrong_predictions: 366300
+total_predictability: 1255574
+total_first_and_second_predictions: 1190777
+
+
+
+total circular correct: 890268
+total circular wrong: 366300
+
+
+
+total_timely_predictions: 664264
+total_untimely_predictions: 226004
+
+
+
+dis_in_seq_region: 398	dis_out_of_sequential_region: 2624
+
+
+
+histogram_num_of_dests 0: 2043
+histogram_num_of_dests 1: 1376
+histogram_num_of_dests 2: 497
+histogram_num_of_dests 3: 129
+histogram_num_of_dests 4: 28
+histogram_num_of_dests 5: 8
+histogram_num_of_dests 6: 5
+histogram_num_of_dests 7: 6
+histogram_num_of_dests 8: 1
+histogram_num_of_dests 9: 3
+total_single_destination: 1376
+total_multiple_destination: 677
+total_freq: 0
+total_correct_predictions: 0
+total_wrong_predictions: 0
+total_predictability: 0
+total_first_and_second_predictions: 0
+
+
+
+total circular correct: 0
+total circular wrong: 0
+
+
+
+total_timely_predictions: 0
+total_untimely_predictions: 0
+
+
+
+dis_in_seq_region: 0	dis_out_of_sequential_region: 0
+
+
+
+histogram_num_of_dests 0: 0
+histogram_num_of_dests 1: 0
+histogram_num_of_dests 2: 0
+histogram_num_of_dests 3: 0
+histogram_num_of_dests 4: 0
+histogram_num_of_dests 5: 0
+histogram_num_of_dests 6: 0
+histogram_num_of_dests 7: 0
+histogram_num_of_dests 8: 0
+histogram_num_of_dests 9: 0
+total_single_destination: 0
+total_multiple_destination: 0
+
+
+
+sequential_1_misses: 1244687
+sequential_4_misses: 1361119
+discontinuity_misses: 1062896
+sequential_1_prefHits: 1601641
+sequential_4_prefHits 1831715
+discontinuity_prefHits: 964233
+
+
+
+SeqTable
+SeqTable matches: 46841231	conflicts: 3207037
+
+
+
+wrong_snl_table:
+wrong_snl_table matches: 1218840	conflicts: 25847
+
+
+
+DisTable1
+num_of_hits: 1872528	num_of_misses: 501107	num_of_evictions: 501107	num_of_ignored_dests: 0
+num_of_updates: 2373635	internal_conflicts: 797321	external_conflicts: 499079
+
+
+
+RLU_permit: 16420197
+RLU_filter: 5870612
+
+
+
+non_prefetched_miss_in_seq_region: 970442
+non_prefetched_miss_in_Dis_region: 824236
+
+
+
+update_history_entry_missed: 501107
+
+
+SHEET
+2K_wo_prefill, num_of_lookups: 0
+2K_wo_prefill, num_of_updates: 0
+2K_wo_prefill, num_of_predecodes: 0
+2K_wo_prefill, num_of_hits: 0
+2K_wo_prefill, num_of_misses: 0
+2K_wo_prefill, hit rate: -nan
+2K_wo_prefill, num_of_hits_demand: 0
+2K_wo_prefill, num_of_misses_demand: 0
+2K_wo_prefill, hit rate demand: -nan
+2K_wo_prefill, num_of_hits_prefill: 0
+2K_wo_prefill, num_of_misses_prefill: 0
+2K_wo_prefill, hit rate prefill: -nan
+2K_wo_prefill, num_of_hits_wrong_path: 0
+2K_wo_prefill, num_of_misses_wrong_path: 0
+2K_wo_prefill, btb_miss_stalls: 0
+2K_wo_prefill, btb_miss_not_stalls: 0
+2K_wo_prefill, direction_mispredictions_do_not_stall: 0
+2K_wo_prefill, branch_direction_stalls: 0
+2K_wo_prefill, target_prediction_stalls: 0
+2K_wo_prefill, target misprediction reason NOTB: 0
+2K_wo_prefill, target misprediction reason DJMP: 0
+2K_wo_prefill, target misprediction reason INDR: 0
+2K_wo_prefill, target misprediction reason COND: 0
+2K_wo_prefill, target misprediction reason DCLL: 0
+2K_wo_prefill, target misprediction reason ICLL: 0
+2K_wo_prefill, target misprediction reason RETN: 0
+2K_wo_prefill, target misprediction reason OTHR: 0
+2K_wo_prefill, target misprediction reason EXCB: 0
+2K_wo_prefill, target match reason NOTB: 0
+2K_wo_prefill, target match reason DJMP: 0
+2K_wo_prefill, target match reason INDR: 0
+2K_wo_prefill, target match reason COND: 0
+2K_wo_prefill, target match reason DCLL: 0
+2K_wo_prefill, target match reason ICLL: 0
+2K_wo_prefill, target match reason RETN: 0
+2K_wo_prefill, target match reason OTHR: 0
+2K_wo_prefill, target match reason EXCB: 0
+2K_wo_prefill, num_of_hash_conflicts: 0
+2K_wo_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+2K_with_prefill, num_of_lookups: 0
+2K_with_prefill, num_of_updates: 0
+2K_with_prefill, num_of_predecodes: 0
+2K_with_prefill, num_of_hits: 0
+2K_with_prefill, num_of_misses: 0
+2K_with_prefill, hit rate: -nan
+2K_with_prefill, num_of_hits_demand: 0
+2K_with_prefill, num_of_misses_demand: 0
+2K_with_prefill, hit rate demand: -nan
+2K_with_prefill, num_of_hits_prefill: 0
+2K_with_prefill, num_of_misses_prefill: 0
+2K_with_prefill, hit rate prefill: -nan
+2K_with_prefill, num_of_hits_wrong_path: 0
+2K_with_prefill, num_of_misses_wrong_path: 0
+2K_with_prefill, btb_miss_stalls: 0
+2K_with_prefill, btb_miss_not_stalls: 0
+2K_with_prefill, direction_mispredictions_do_not_stall: 0
+2K_with_prefill, branch_direction_stalls: 0
+2K_with_prefill, target_prediction_stalls: 0
+2K_with_prefill, target misprediction reason NOTB: 0
+2K_with_prefill, target misprediction reason DJMP: 0
+2K_with_prefill, target misprediction reason INDR: 0
+2K_with_prefill, target misprediction reason COND: 0
+2K_with_prefill, target misprediction reason DCLL: 0
+2K_with_prefill, target misprediction reason ICLL: 0
+2K_with_prefill, target misprediction reason RETN: 0
+2K_with_prefill, target misprediction reason OTHR: 0
+2K_with_prefill, target misprediction reason EXCB: 0
+2K_with_prefill, target match reason NOTB: 0
+2K_with_prefill, target match reason DJMP: 0
+2K_with_prefill, target match reason INDR: 0
+2K_with_prefill, target match reason COND: 0
+2K_with_prefill, target match reason DCLL: 0
+2K_with_prefill, target match reason ICLL: 0
+2K_with_prefill, target match reason RETN: 0
+2K_with_prefill, target match reason OTHR: 0
+2K_with_prefill, target match reason EXCB: 0
+2K_with_prefill, num_of_hash_conflicts: 0
+2K_with_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+4K_wo_prefill, num_of_lookups: 0
+4K_wo_prefill, num_of_updates: 0
+4K_wo_prefill, num_of_predecodes: 0
+4K_wo_prefill, num_of_hits: 0
+4K_wo_prefill, num_of_misses: 0
+4K_wo_prefill, hit rate: -nan
+4K_wo_prefill, num_of_hits_demand: 0
+4K_wo_prefill, num_of_misses_demand: 0
+4K_wo_prefill, hit rate demand: -nan
+4K_wo_prefill, num_of_hits_prefill: 0
+4K_wo_prefill, num_of_misses_prefill: 0
+4K_wo_prefill, hit rate prefill: -nan
+4K_wo_prefill, num_of_hits_wrong_path: 0
+4K_wo_prefill, num_of_misses_wrong_path: 0
+4K_wo_prefill, btb_miss_stalls: 0
+4K_wo_prefill, btb_miss_not_stalls: 0
+4K_wo_prefill, direction_mispredictions_do_not_stall: 0
+4K_wo_prefill, branch_direction_stalls: 0
+4K_wo_prefill, target_prediction_stalls: 0
+4K_wo_prefill, target misprediction reason NOTB: 0
+4K_wo_prefill, target misprediction reason DJMP: 0
+4K_wo_prefill, target misprediction reason INDR: 0
+4K_wo_prefill, target misprediction reason COND: 0
+4K_wo_prefill, target misprediction reason DCLL: 0
+4K_wo_prefill, target misprediction reason ICLL: 0
+4K_wo_prefill, target misprediction reason RETN: 0
+4K_wo_prefill, target misprediction reason OTHR: 0
+4K_wo_prefill, target misprediction reason EXCB: 0
+4K_wo_prefill, target match reason NOTB: 0
+4K_wo_prefill, target match reason DJMP: 0
+4K_wo_prefill, target match reason INDR: 0
+4K_wo_prefill, target match reason COND: 0
+4K_wo_prefill, target match reason DCLL: 0
+4K_wo_prefill, target match reason ICLL: 0
+4K_wo_prefill, target match reason RETN: 0
+4K_wo_prefill, target match reason OTHR: 0
+4K_wo_prefill, target match reason EXCB: 0
+4K_wo_prefill, num_of_hash_conflicts: 0
+4K_wo_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+4K_with_prefill, num_of_lookups: 0
+4K_with_prefill, num_of_updates: 0
+4K_with_prefill, num_of_predecodes: 0
+4K_with_prefill, num_of_hits: 0
+4K_with_prefill, num_of_misses: 0
+4K_with_prefill, hit rate: -nan
+4K_with_prefill, num_of_hits_demand: 0
+4K_with_prefill, num_of_misses_demand: 0
+4K_with_prefill, hit rate demand: -nan
+4K_with_prefill, num_of_hits_prefill: 0
+4K_with_prefill, num_of_misses_prefill: 0
+4K_with_prefill, hit rate prefill: -nan
+4K_with_prefill, num_of_hits_wrong_path: 0
+4K_with_prefill, num_of_misses_wrong_path: 0
+4K_with_prefill, btb_miss_stalls: 0
+4K_with_prefill, btb_miss_not_stalls: 0
+4K_with_prefill, direction_mispredictions_do_not_stall: 0
+4K_with_prefill, branch_direction_stalls: 0
+4K_with_prefill, target_prediction_stalls: 0
+4K_with_prefill, target misprediction reason NOTB: 0
+4K_with_prefill, target misprediction reason DJMP: 0
+4K_with_prefill, target misprediction reason INDR: 0
+4K_with_prefill, target misprediction reason COND: 0
+4K_with_prefill, target misprediction reason DCLL: 0
+4K_with_prefill, target misprediction reason ICLL: 0
+4K_with_prefill, target misprediction reason RETN: 0
+4K_with_prefill, target misprediction reason OTHR: 0
+4K_with_prefill, target misprediction reason EXCB: 0
+4K_with_prefill, target match reason NOTB: 0
+4K_with_prefill, target match reason DJMP: 0
+4K_with_prefill, target match reason INDR: 0
+4K_with_prefill, target match reason COND: 0
+4K_with_prefill, target match reason DCLL: 0
+4K_with_prefill, target match reason ICLL: 0
+4K_with_prefill, target match reason RETN: 0
+4K_with_prefill, target match reason OTHR: 0
+4K_with_prefill, target match reason EXCB: 0
+4K_with_prefill, num_of_hash_conflicts: 0
+4K_with_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+8K_wo_prefill, num_of_lookups: 0
+8K_wo_prefill, num_of_updates: 0
+8K_wo_prefill, num_of_predecodes: 0
+8K_wo_prefill, num_of_hits: 0
+8K_wo_prefill, num_of_misses: 0
+8K_wo_prefill, hit rate: -nan
+8K_wo_prefill, num_of_hits_demand: 0
+8K_wo_prefill, num_of_misses_demand: 0
+8K_wo_prefill, hit rate demand: -nan
+8K_wo_prefill, num_of_hits_prefill: 0
+8K_wo_prefill, num_of_misses_prefill: 0
+8K_wo_prefill, hit rate prefill: -nan
+8K_wo_prefill, num_of_hits_wrong_path: 0
+8K_wo_prefill, num_of_misses_wrong_path: 0
+8K_wo_prefill, btb_miss_stalls: 0
+8K_wo_prefill, btb_miss_not_stalls: 0
+8K_wo_prefill, direction_mispredictions_do_not_stall: 0
+8K_wo_prefill, branch_direction_stalls: 0
+8K_wo_prefill, target_prediction_stalls: 0
+8K_wo_prefill, target misprediction reason NOTB: 0
+8K_wo_prefill, target misprediction reason DJMP: 0
+8K_wo_prefill, target misprediction reason INDR: 0
+8K_wo_prefill, target misprediction reason COND: 0
+8K_wo_prefill, target misprediction reason DCLL: 0
+8K_wo_prefill, target misprediction reason ICLL: 0
+8K_wo_prefill, target misprediction reason RETN: 0
+8K_wo_prefill, target misprediction reason OTHR: 0
+8K_wo_prefill, target misprediction reason EXCB: 0
+8K_wo_prefill, target match reason NOTB: 0
+8K_wo_prefill, target match reason DJMP: 0
+8K_wo_prefill, target match reason INDR: 0
+8K_wo_prefill, target match reason COND: 0
+8K_wo_prefill, target match reason DCLL: 0
+8K_wo_prefill, target match reason ICLL: 0
+8K_wo_prefill, target match reason RETN: 0
+8K_wo_prefill, target match reason OTHR: 0
+8K_wo_prefill, target match reason EXCB: 0
+8K_wo_prefill, num_of_hash_conflicts: 0
+8K_wo_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+8K_with_prefill, num_of_lookups: 0
+8K_with_prefill, num_of_updates: 0
+8K_with_prefill, num_of_predecodes: 0
+8K_with_prefill, num_of_hits: 0
+8K_with_prefill, num_of_misses: 0
+8K_with_prefill, hit rate: -nan
+8K_with_prefill, num_of_hits_demand: 0
+8K_with_prefill, num_of_misses_demand: 0
+8K_with_prefill, hit rate demand: -nan
+8K_with_prefill, num_of_hits_prefill: 0
+8K_with_prefill, num_of_misses_prefill: 0
+8K_with_prefill, hit rate prefill: -nan
+8K_with_prefill, num_of_hits_wrong_path: 0
+8K_with_prefill, num_of_misses_wrong_path: 0
+8K_with_prefill, btb_miss_stalls: 0
+8K_with_prefill, btb_miss_not_stalls: 0
+8K_with_prefill, direction_mispredictions_do_not_stall: 0
+8K_with_prefill, branch_direction_stalls: 0
+8K_with_prefill, target_prediction_stalls: 0
+8K_with_prefill, target misprediction reason NOTB: 0
+8K_with_prefill, target misprediction reason DJMP: 0
+8K_with_prefill, target misprediction reason INDR: 0
+8K_with_prefill, target misprediction reason COND: 0
+8K_with_prefill, target misprediction reason DCLL: 0
+8K_with_prefill, target misprediction reason ICLL: 0
+8K_with_prefill, target misprediction reason RETN: 0
+8K_with_prefill, target misprediction reason OTHR: 0
+8K_with_prefill, target misprediction reason EXCB: 0
+8K_with_prefill, target match reason NOTB: 0
+8K_with_prefill, target match reason DJMP: 0
+8K_with_prefill, target match reason INDR: 0
+8K_with_prefill, target match reason COND: 0
+8K_with_prefill, target match reason DCLL: 0
+8K_with_prefill, target match reason ICLL: 0
+8K_with_prefill, target match reason RETN: 0
+8K_with_prefill, target match reason OTHR: 0
+8K_with_prefill, target match reason EXCB: 0
+8K_with_prefill, num_of_hash_conflicts: 0
+8K_with_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+16K_wo_prefill, num_of_lookups: 0
+16K_wo_prefill, num_of_updates: 0
+16K_wo_prefill, num_of_predecodes: 0
+16K_wo_prefill, num_of_hits: 0
+16K_wo_prefill, num_of_misses: 0
+16K_wo_prefill, hit rate: -nan
+16K_wo_prefill, num_of_hits_demand: 0
+16K_wo_prefill, num_of_misses_demand: 0
+16K_wo_prefill, hit rate demand: -nan
+16K_wo_prefill, num_of_hits_prefill: 0
+16K_wo_prefill, num_of_misses_prefill: 0
+16K_wo_prefill, hit rate prefill: -nan
+16K_wo_prefill, num_of_hits_wrong_path: 0
+16K_wo_prefill, num_of_misses_wrong_path: 0
+16K_wo_prefill, btb_miss_stalls: 0
+16K_wo_prefill, btb_miss_not_stalls: 0
+16K_wo_prefill, direction_mispredictions_do_not_stall: 0
+16K_wo_prefill, branch_direction_stalls: 0
+16K_wo_prefill, target_prediction_stalls: 0
+16K_wo_prefill, target misprediction reason NOTB: 0
+16K_wo_prefill, target misprediction reason DJMP: 0
+16K_wo_prefill, target misprediction reason INDR: 0
+16K_wo_prefill, target misprediction reason COND: 0
+16K_wo_prefill, target misprediction reason DCLL: 0
+16K_wo_prefill, target misprediction reason ICLL: 0
+16K_wo_prefill, target misprediction reason RETN: 0
+16K_wo_prefill, target misprediction reason OTHR: 0
+16K_wo_prefill, target misprediction reason EXCB: 0
+16K_wo_prefill, target match reason NOTB: 0
+16K_wo_prefill, target match reason DJMP: 0
+16K_wo_prefill, target match reason INDR: 0
+16K_wo_prefill, target match reason COND: 0
+16K_wo_prefill, target match reason DCLL: 0
+16K_wo_prefill, target match reason ICLL: 0
+16K_wo_prefill, target match reason RETN: 0
+16K_wo_prefill, target match reason OTHR: 0
+16K_wo_prefill, target match reason EXCB: 0
+16K_wo_prefill, num_of_hash_conflicts: 0
+16K_wo_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+16K_with_prefill, num_of_lookups: 0
+16K_with_prefill, num_of_updates: 0
+16K_with_prefill, num_of_predecodes: 0
+16K_with_prefill, num_of_hits: 0
+16K_with_prefill, num_of_misses: 0
+16K_with_prefill, hit rate: -nan
+16K_with_prefill, num_of_hits_demand: 0
+16K_with_prefill, num_of_misses_demand: 0
+16K_with_prefill, hit rate demand: -nan
+16K_with_prefill, num_of_hits_prefill: 0
+16K_with_prefill, num_of_misses_prefill: 0
+16K_with_prefill, hit rate prefill: -nan
+16K_with_prefill, num_of_hits_wrong_path: 0
+16K_with_prefill, num_of_misses_wrong_path: 0
+16K_with_prefill, btb_miss_stalls: 0
+16K_with_prefill, btb_miss_not_stalls: 0
+16K_with_prefill, direction_mispredictions_do_not_stall: 0
+16K_with_prefill, branch_direction_stalls: 0
+16K_with_prefill, target_prediction_stalls: 0
+16K_with_prefill, target misprediction reason NOTB: 0
+16K_with_prefill, target misprediction reason DJMP: 0
+16K_with_prefill, target misprediction reason INDR: 0
+16K_with_prefill, target misprediction reason COND: 0
+16K_with_prefill, target misprediction reason DCLL: 0
+16K_with_prefill, target misprediction reason ICLL: 0
+16K_with_prefill, target misprediction reason RETN: 0
+16K_with_prefill, target misprediction reason OTHR: 0
+16K_with_prefill, target misprediction reason EXCB: 0
+16K_with_prefill, target match reason NOTB: 0
+16K_with_prefill, target match reason DJMP: 0
+16K_with_prefill, target match reason INDR: 0
+16K_with_prefill, target match reason COND: 0
+16K_with_prefill, target match reason DCLL: 0
+16K_with_prefill, target match reason ICLL: 0
+16K_with_prefill, target match reason RETN: 0
+16K_with_prefill, target match reason OTHR: 0
+16K_with_prefill, target match reason EXCB: 0
+16K_with_prefill, num_of_hash_conflicts: 0
+16K_with_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+32K_wo_prefill, num_of_lookups: 0
+32K_wo_prefill, num_of_updates: 0
+32K_wo_prefill, num_of_predecodes: 0
+32K_wo_prefill, num_of_hits: 0
+32K_wo_prefill, num_of_misses: 0
+32K_wo_prefill, hit rate: -nan
+32K_wo_prefill, num_of_hits_demand: 0
+32K_wo_prefill, num_of_misses_demand: 0
+32K_wo_prefill, hit rate demand: -nan
+32K_wo_prefill, num_of_hits_prefill: 0
+32K_wo_prefill, num_of_misses_prefill: 0
+32K_wo_prefill, hit rate prefill: -nan
+32K_wo_prefill, num_of_hits_wrong_path: 0
+32K_wo_prefill, num_of_misses_wrong_path: 0
+32K_wo_prefill, btb_miss_stalls: 0
+32K_wo_prefill, btb_miss_not_stalls: 0
+32K_wo_prefill, direction_mispredictions_do_not_stall: 0
+32K_wo_prefill, branch_direction_stalls: 0
+32K_wo_prefill, target_prediction_stalls: 0
+32K_wo_prefill, target misprediction reason NOTB: 0
+32K_wo_prefill, target misprediction reason DJMP: 0
+32K_wo_prefill, target misprediction reason INDR: 0
+32K_wo_prefill, target misprediction reason COND: 0
+32K_wo_prefill, target misprediction reason DCLL: 0
+32K_wo_prefill, target misprediction reason ICLL: 0
+32K_wo_prefill, target misprediction reason RETN: 0
+32K_wo_prefill, target misprediction reason OTHR: 0
+32K_wo_prefill, target misprediction reason EXCB: 0
+32K_wo_prefill, target match reason NOTB: 0
+32K_wo_prefill, target match reason DJMP: 0
+32K_wo_prefill, target match reason INDR: 0
+32K_wo_prefill, target match reason COND: 0
+32K_wo_prefill, target match reason DCLL: 0
+32K_wo_prefill, target match reason ICLL: 0
+32K_wo_prefill, target match reason RETN: 0
+32K_wo_prefill, target match reason OTHR: 0
+32K_wo_prefill, target match reason EXCB: 0
+32K_wo_prefill, num_of_hash_conflicts: 0
+32K_wo_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+32K_with_prefill, num_of_lookups: 0
+32K_with_prefill, num_of_updates: 0
+32K_with_prefill, num_of_predecodes: 0
+32K_with_prefill, num_of_hits: 0
+32K_with_prefill, num_of_misses: 0
+32K_with_prefill, hit rate: -nan
+32K_with_prefill, num_of_hits_demand: 0
+32K_with_prefill, num_of_misses_demand: 0
+32K_with_prefill, hit rate demand: -nan
+32K_with_prefill, num_of_hits_prefill: 0
+32K_with_prefill, num_of_misses_prefill: 0
+32K_with_prefill, hit rate prefill: -nan
+32K_with_prefill, num_of_hits_wrong_path: 0
+32K_with_prefill, num_of_misses_wrong_path: 0
+32K_with_prefill, btb_miss_stalls: 0
+32K_with_prefill, btb_miss_not_stalls: 0
+32K_with_prefill, direction_mispredictions_do_not_stall: 0
+32K_with_prefill, branch_direction_stalls: 0
+32K_with_prefill, target_prediction_stalls: 0
+32K_with_prefill, target misprediction reason NOTB: 0
+32K_with_prefill, target misprediction reason DJMP: 0
+32K_with_prefill, target misprediction reason INDR: 0
+32K_with_prefill, target misprediction reason COND: 0
+32K_with_prefill, target misprediction reason DCLL: 0
+32K_with_prefill, target misprediction reason ICLL: 0
+32K_with_prefill, target misprediction reason RETN: 0
+32K_with_prefill, target misprediction reason OTHR: 0
+32K_with_prefill, target misprediction reason EXCB: 0
+32K_with_prefill, target match reason NOTB: 0
+32K_with_prefill, target match reason DJMP: 0
+32K_with_prefill, target match reason INDR: 0
+32K_with_prefill, target match reason COND: 0
+32K_with_prefill, target match reason DCLL: 0
+32K_with_prefill, target match reason ICLL: 0
+32K_with_prefill, target match reason RETN: 0
+32K_with_prefill, target match reason OTHR: 0
+32K_with_prefill, target match reason EXCB: 0
+32K_with_prefill, num_of_hash_conflicts: 0
+32K_with_prefill, num_of_block_lookups: 0
+
+
+
+SHEET
+Confluence_BTB, num_of_lookups: 0
+Confluence_BTB, num_of_updates: 0
+Confluence_BTB, num_of_predecodes: 0
+Confluence_BTB, num_of_hits: 0
+Confluence_BTB, num_of_misses: 0
+Confluence_BTB, hit rate: -nan
+Confluence_BTB, num_of_hits_demand: 0
+Confluence_BTB, num_of_misses_demand: 0
+Confluence_BTB, hit rate demand: -nan
+Confluence_BTB, num_of_hits_prefill: 0
+Confluence_BTB, num_of_misses_prefill: 0
+Confluence_BTB, hit rate prefill: -nan
+Confluence_BTB, num_of_hits_wrong_path: 0
+Confluence_BTB, num_of_misses_wrong_path: 0
+Confluence_BTB, btb_miss_stalls: 0
+Confluence_BTB, btb_miss_not_stalls: 0
+Confluence_BTB, direction_mispredictions_do_not_stall: 0
+Confluence_BTB, branch_direction_stalls: 0
+Confluence_BTB, target_prediction_stalls: 0
+Confluence_BTB, target misprediction reason NOTB: 0
+Confluence_BTB, target misprediction reason DJMP: 0
+Confluence_BTB, target misprediction reason INDR: 0
+Confluence_BTB, target misprediction reason COND: 0
+Confluence_BTB, target misprediction reason DCLL: 0
+Confluence_BTB, target misprediction reason ICLL: 0
+Confluence_BTB, target misprediction reason RETN: 0
+Confluence_BTB, target misprediction reason OTHR: 0
+Confluence_BTB, target misprediction reason EXCB: 0
+Confluence_BTB, target match reason NOTB: 0
+Confluence_BTB, target match reason DJMP: 0
+Confluence_BTB, target match reason INDR: 0
+Confluence_BTB, target match reason COND: 0
+Confluence_BTB, target match reason DCLL: 0
+Confluence_BTB, target match reason ICLL: 0
+Confluence_BTB, target match reason RETN: 0
+Confluence_BTB, target match reason OTHR: 0
+Confluence_BTB, target match reason EXCB: 0
+
+
+
+SHEET
+2K_sn4l_BTB, num_of_lookups: 9146151
+2K_sn4l_BTB, num_of_updates: 3550625
+2K_sn4l_BTB, num_of_predecodes: 8269335
+2K_sn4l_BTB, num_of_updates_pb: 6423027
+2K_sn4l_BTB, num_of_hits: 6931418
+2K_sn4l_BTB, num_of_misses: 2214733
+2K_sn4l_BTB, hit rate: 0.757851
+2K_sn4l_BTB, num_of_hits_demand: 6931418
+2K_sn4l_BTB, num_of_misses_demand: 2214733
+2K_sn4l_BTB, hit rate demand: 0.757851
+2K_sn4l_BTB, num_of_hits_prefill: 0
+2K_sn4l_BTB, num_of_misses_prefill: 0
+2K_sn4l_BTB, hit rate prefill: -nan
+2K_sn4l_BTB, num_of_hits_wrong_path: 0
+2K_sn4l_BTB, num_of_misses_wrong_path: 0
+2K_sn4l_BTB, btb_miss_stalls: 1227070
+2K_sn4l_BTB, btb_miss_not_stalls: 987663
+2K_sn4l_BTB, direction_mispredictions_do_not_stall: 128696
+2K_sn4l_BTB, branch_direction_stalls: 398404
+2K_sn4l_BTB, target_prediction_stalls: 47855
+2K_sn4l_BTB, target misprediction reason NOTB: 0
+2K_sn4l_BTB, target misprediction reason DJMP: 1767
+2K_sn4l_BTB, target misprediction reason INDR: 16037
+2K_sn4l_BTB, target misprediction reason COND: 15362
+2K_sn4l_BTB, target misprediction reason DCLL: 2718
+2K_sn4l_BTB, target misprediction reason ICLL: 10670
+2K_sn4l_BTB, target misprediction reason RETN: 1301
+2K_sn4l_BTB, target misprediction reason OTHR: 0
+2K_sn4l_BTB, target misprediction reason EXCB: 0
+2K_sn4l_BTB, target match reason NOTB: 0
+2K_sn4l_BTB, target match reason DJMP: 423728
+2K_sn4l_BTB, target match reason INDR: 129591
+2K_sn4l_BTB, target match reason COND: 4435259
+2K_sn4l_BTB, target match reason DCLL: 537948
+2K_sn4l_BTB, target match reason ICLL: 32925
+2K_sn4l_BTB, target match reason RETN: 797012
+2K_sn4l_BTB, target match reason OTHR: 0
+2K_sn4l_BTB, target match reason EXCB: 0
+
+
+
+SHEET
+branches: 10701
+
+
+SHEET
+2K_wo_prefill btb_miss_stalls: 0
+2K_wo_prefill branch_direction_stalls: 0
+2K_wo_prefill target_prediction_stalls: 0
+2K_with_prefill btb_miss_stalls: 0
+2K_with_prefill branch_direction_stalls: 0
+2K_with_prefill target_prediction_stalls: 0
+4K_wo_prefill btb_miss_stalls: 0
+4K_wo_prefill branch_direction_stalls: 0
+4K_wo_prefill target_prediction_stalls: 0
+4K_with_prefill btb_miss_stalls: 0
+4K_with_prefill branch_direction_stalls: 0
+4K_with_prefill target_prediction_stalls: 0
+8K_wo_prefill btb_miss_stalls: 0
+8K_wo_prefill branch_direction_stalls: 0
+8K_wo_prefill target_prediction_stalls: 0
+8K_with_prefill btb_miss_stalls: 0
+8K_with_prefill branch_direction_stalls: 0
+8K_with_prefill target_prediction_stalls: 0
+16K_wo_prefill btb_miss_stalls: 0
+16K_wo_prefill branch_direction_stalls: 0
+16K_wo_prefill target_prediction_stalls: 0
+16K_with_prefill btb_miss_stalls: 0
+16K_with_prefill branch_direction_stalls: 0
+16K_with_prefill target_prediction_stalls: 0
+32K_wo_prefill btb_miss_stalls: 0
+32K_wo_prefill branch_direction_stalls: 0
+32K_wo_prefill target_prediction_stalls: 0
+32K_with_prefill btb_miss_stalls: 0
+32K_with_prefill branch_direction_stalls: 0
+32K_with_prefill target_prediction_stalls: 0
+Confluence_BTB btb_miss_stalls: 0
+Confluence_BTB branch_direction_stalls: 0
+Confluence_BTB target_prediction_stalls: 0
+2K_sn4l_BTB btb_miss_stalls: 24.5414
+2K_sn4l_BTB branch_direction_stalls: 7.96808
+2K_sn4l_BTB target_prediction_stalls: 0.9571
+
+
+
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:      13910  ROW_BUFFER_MISS:      23314
+ DBUS_CONGESTED:      31888
+ WQ ROW_BUFFER_HIT:       2935  ROW_BUFFER_MISS:      21562  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 6
+
+CPU 0 Branch Prediction Accuracy: 91.8907% MPKI: 14.8338 Average ROB Occupancy at Mispredict: 41.0634
+
+Branch types
+NOT_BRANCH: 40853555 81.7071%
+BRANCH_DIRECT_JUMP: 566812 1.13362%
+BRANCH_INDIRECT: 197171 0.394342%
+BRANCH_CONDITIONAL: 6308393 12.6168%
+BRANCH_DIRECT_CALL: 876399 1.7528%
+BRANCH_INDIRECT_CALL: 160491 0.320982%
+BRANCH_RETURN: 1036885 2.07377%
+BRANCH_OTHER: 0 0%
+

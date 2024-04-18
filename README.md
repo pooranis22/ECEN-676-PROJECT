@@ -79,6 +79,10 @@ or
 
     ./build_champsim.sh bimodal no no no no lru 1
 
+or
+    (https://github.com/ipmcs/divide_conquer/tree/master)
+    ./build_champsim.sh bimodal SN4L no no no lru 1
+
 After build successful, sbatch the job_submits, the job scripts are under the job folder
 
 Don't forget to change my email to your email in the scripts!
@@ -99,46 +103,3 @@ Poorani - next_line
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-For the 4 cores simulation:
-
-Open run_4core.sh and change line 9 to:
-
-    TRACE_DIR=$PWD/ipc1_public
-
-Run this command to build:
-
-    ./build_champsim.sh bimodal Entangling_2Ke no no no lru 4
-
-or
-
-    ./build_champsim.sh bimodal Entangling_4Ke no no no lru 4
-
-or
-
-    ./build_champsim.sh bimodal Entangling_8Ke no no no lru 4
-
-or
-
-    ./build_champsim.sh bimodal next_line no no no lru 4
-
-or
-
-    ./build_champsim.sh bimodal no no no no lru 4
-
-After build successful, sbatch the job_submits, the job scripts are under the job folder -> 4core
-
-Don't forget to change my email to your email in the scripts!
-
-Upload results:
-
-![Upload 4 Cores Results](Upload_results_4core.PNG)
-
-Simulations:
-
-Jay - Entangling_8Ke
-
-Steven - Entangling_4Ke
-
-Zhihao - no and Entangling_2Ke
-
-Poorani - next_line

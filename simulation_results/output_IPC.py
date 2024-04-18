@@ -25,7 +25,7 @@ def extract_values_from_files(directory_path):
     return ipc_values, mpki_values
 
 # Example usage
-directory_path = 'C:\\Users\\wang6\\Documents\\GitHub\\ECEN676-Project-Group9\\simulation_results\\bimodal\\Entangling_4Ke\\results_50M\\'  # Replace with the path to your directory
+directory_path = 'C:\\Users\\wang6\\Documents\\GitHub\\ECEN676-Project-Group9\\simulation_results\\1core\\bimodal\\SN4L\\results_50M\\'  # Replace with the path to your directory
 ipc_values, mpki_values = extract_values_from_files(directory_path)
 print("IPC Values:", ipc_values)
 print("MPKI Values:", mpki_values)
