@@ -1,0 +1,108 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 50000000
+Simulation Instructions: 50000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs /home/grads/p/pan82396610/ecen676/project_ZhihaoPan/ChampSim/ipc1_public/server_013.champsimtrace.xz
+CPU 0 Bimodal branch predictor
+CPU 0 Entangling prefetcher
+Heartbeat CPU 0 instructions: 10000000 cycles: 3211091 heartbeat IPC: 3.11421 cumulative IPC: 3.11421 (Simulation time: 0 hr 0 min 37 sec) 
+Heartbeat CPU 0 instructions: 20000001 cycles: 6410450 heartbeat IPC: 3.12563 cumulative IPC: 3.11991 (Simulation time: 0 hr 1 min 15 sec) 
+Heartbeat CPU 0 instructions: 30000002 cycles: 9613686 heartbeat IPC: 3.12184 cumulative IPC: 3.12055 (Simulation time: 0 hr 1 min 52 sec) 
+Heartbeat CPU 0 instructions: 40000002 cycles: 12812652 heartbeat IPC: 3.12601 cumulative IPC: 3.12191 (Simulation time: 0 hr 2 min 29 sec) 
+Heartbeat CPU 0 instructions: 50000000 cycles: 16011046 heartbeat IPC: 3.12657 cumulative IPC: 3.12284 (Simulation time: 0 hr 3 min 6 sec) 
+
+Warmup complete CPU 0 instructions: 50000004 cycles: 16011047 (Simulation time: 0 hr 3 min 6 sec) 
+
+Heartbeat CPU 0 instructions: 60000000 cycles: 25265761 heartbeat IPC: 1.08053 cumulative IPC: 1.08053 (Simulation time: 0 hr 3 min 37 sec) 
+Heartbeat CPU 0 instructions: 70000002 cycles: 34624486 heartbeat IPC: 1.06852 cumulative IPC: 1.07449 (Simulation time: 0 hr 4 min 7 sec) 
+Heartbeat CPU 0 instructions: 80000003 cycles: 43388571 heartbeat IPC: 1.14102 cumulative IPC: 1.09579 (Simulation time: 0 hr 4 min 37 sec) 
+Heartbeat CPU 0 instructions: 90000003 cycles: 52414014 heartbeat IPC: 1.10798 cumulative IPC: 1.09881 (Simulation time: 0 hr 5 min 7 sec) 
+Heartbeat CPU 0 instructions: 100000003 cycles: 61444921 heartbeat IPC: 1.10731 cumulative IPC: 1.1005 (Simulation time: 0 hr 5 min 38 sec) 
+Finished CPU 0 instructions: 50000003 cycles: 45433875 cumulative IPC: 1.1005 (Simulation time: 0 hr 5 min 38 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 1.1005 instructions: 50000003 cycles: 45433875
+L1D TOTAL     ACCESS:   11254375  HIT:   10607514  MISS:     646861
+L1D LOAD      ACCESS:    6328115  HIT:    5769135  MISS:     558980
+L1D RFO       ACCESS:    4926260  HIT:    4838379  MISS:      87881
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1D AVERAGE MISS LATENCY: 52.1615 cycles
+L1I TOTAL     ACCESS:   18451206  HIT:   16503136  MISS:    1948070
+L1I LOAD      ACCESS:    6340578  HIT:    5927278  MISS:     413300
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:   12110628  HIT:   10575858  MISS:    1534770
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:   17533789  ISSUED:   14555736  USEFUL:    1031583  USELESS:     503185
+L1I AVERAGE MISS LATENCY: 27.5346 cycles
+L2C TOTAL     ACCESS:    2850780  HIT:    1805585  MISS:    1045195
+L2C LOAD      ACCESS:     912453  HIT:     378699  MISS:     533754
+L2C RFO       ACCESS:      87855  HIT:      34662  MISS:      53193
+L2C PREFETCH  ACCESS:    1594571  HIT:    1139864  MISS:     454707
+L2C WRITEBACK ACCESS:     255901  HIT:     252360  MISS:       3541
+L2C PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:      32035  USELESS:     422137
+L2C AVERAGE MISS LATENCY: 43.7669 cycles
+LLC TOTAL     ACCESS:    1200550  HIT:    1125181  MISS:      75369
+LLC LOAD      ACCESS:     533743  HIT:     471831  MISS:      61912
+LLC RFO       ACCESS:      53191  HIT:      42561  MISS:      10630
+LLC PREFETCH  ACCESS:     454707  HIT:     451933  MISS:       2774
+LLC WRITEBACK ACCESS:     158909  HIT:     158856  MISS:         53
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:        424  USELESS:       2221
+LLC AVERAGE MISS LATENCY: 160.272 cycles
+Major fault: 0 Minor fault: 6697
+CPU 0 L1I Entangling prefetcher final stats
+IP accesses: 891c 224700 111456 / 6370421
+IP misses: 46ec 11bb00 967 / 443145
+IP hits: 1f9b 7e6c0 1881 / 1031583
+IP late: 20a2 82880 767 / 124896
+IP wrong: 3a86 ea180 932 / 501900
+miss rate: 0.0695629
+coverage: 0.699507
+coverage_late: 0.784198
+accuracy: 0.622043
+accuracy_late: 0.697355
+discarded: 0
+evicts entangled j table: 0
+evicts entangled k table: 40140
+max bb size: 111
+formats: 7398 17932 48913 10360 5134 15772 0 
+hist_lookups: 44525 46096 34399 28464 22061 16059 10118 5445 2870 1836 1165 582 292 135 57 0 0 931 
+hist_lookups_evict: 0 %
+hist_lookups_shortlat: 0.432953 %
+bb_found_hist: 0 789365 440538 193152 77965 69454 23262 30732 61503 36018 23730 25132 30911 11159 9426 17343 6199 770 854 3097 872 1375 1369 313 261 17 82 29 322 0 47 59 0 0 60 128 122 0 117 0 110 0 0 0 0 0 0 127 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+bb_found_summary: 5819476 1856020 3.13546
+entangled_found_hist: 0 698002 651055 451772 49939 10486 2753 0 
+entangled_found_summary: 3624132 1864007 1.94427
+bb_ent_found_hist: 0 891924 630063 340267 121316 127614 68683 31376 37988 42651 35363 52672 21137 6423 4796 31385 21174 1782 1977 9277 1621 4187 2179 1347 4321 24 334 1540 2924 0 128 393 0 0 95 214 4 62 616 0 100 0 0 0 0 0 0 124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+bb_ent_found_summary: 8502812 2498081 3.40374
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:      11840  ROW_BUFFER_MISS:      63476
+ DBUS_CONGESTED:      25867
+ WQ ROW_BUFFER_HIT:      13315  ROW_BUFFER_MISS:      41899  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 6
+
+CPU 0 Branch Prediction Accuracy: 93.8403% MPKI: 11.4406 Average ROB Occupancy at Mispredict: 79.4321
+
+Branch types
+NOT_BRANCH: 40712939 81.4259%
+BRANCH_DIRECT_JUMP: 463696 0.927392%
+BRANCH_INDIRECT: 146542 0.293084%
+BRANCH_CONDITIONAL: 6981906 13.9638%
+BRANCH_DIRECT_CALL: 665001 1.33%
+BRANCH_INDIRECT_CALL: 165150 0.3303%
+BRANCH_RETURN: 864309 1.72862%
+BRANCH_OTHER: 0 0%
+
